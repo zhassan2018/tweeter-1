@@ -9,7 +9,7 @@
 	padding-left: 2em;
 	padding-top: 0em;
 	padding-bottom: 0em;
-	overflow: auto;
+
 	
 
 }
@@ -26,6 +26,6 @@
 	float: left;
 	padding: 10px;
 	font-size: 200%;
-	line-height: 1.5;
+	line-height: 80px;
 	}
 
