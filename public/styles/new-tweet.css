@@ -3,8 +3,7 @@
  	margin: auto;
  	border: 1px solid grey;
  	border-radius: 5px;
- 	margin-left: 2em;
- 	margin-right:2em;
+ 	
  	background-color:#eee;
  }
 
@@ -27,6 +26,9 @@
 
 .new-tweet textarea{
 	width: 100%;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 .new-tweet input{
@@ -40,5 +42,6 @@
 	margin-top: 10px;
 	margin-bottom: 10px
 }
+
 
 
