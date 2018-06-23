@@ -29,14 +29,14 @@ $(document).ready(function(){
 
 
  	var user_name = tweetObj.user.name;
- 	var $user_name = $(`<h1>${user_name}</h1>`);
+ 	var $user_name = $(`<h2>${user_name}</h2>`);
 
  	var handle = tweetObj.user.handle;
  	var $handle = $(`<h4>${handle}</h4>`);
 
 
  	var text = tweetObj.content.text;
- 	var $middle = $(`<div>${text}</div>`).addClass('tweetText');
+ 	var $middle = $(`<p>${text}</p>`).addClass('tweetText');
 
 
  	var $footer = $('<footer>');
@@ -73,7 +73,7 @@ return $article;
 
 
  
-  	$('input').on('click',function(event){
+  	$('.MakeTweet').on('click',function(event){
   		event.preventDefault();
 
 
@@ -81,18 +81,18 @@ return $article;
 
   		if (tweetUser === null || tweetUser === ''){
   		
-  			$error = $('<h1>This is not a valid tweet</h1>').addClass('error');
-  			$('form').append($error);	
+  			$error = $('<h1>This is not a valid tweet!</h1>').addClass('error');
+  			$(this).parent('form').append($error);	
   			$('error').fadeIn();
   			setTimeout(function(){$('.error').remove()}, 2000)
 
   
   		}
 
-  		else if (parseInt(tweetUser) > 140){
+  		else if (parseInt(tweetUser.length) > 140){
   		
-  			$error = $('<h1>You have to many characters</h1>').addClass('error');
-  			$('form').append($error);	
+  			$error = $('<h1>Character limit exceeded!</h1>').addClass('error');
+  			$(this).parent('form').append($error);	
   			$('error').fadeIn();
   			setTimeout(function(){$('.error').remove()}, 2000)
 
@@ -117,7 +117,15 @@ return $article;
   					loadTweets()}
   				
   			})
-  		} })
+
+  			$('.counter').text(140);
+        $('textarea').val("");
+
+  		} 
+
+
+
+  	})
 
 
 
@@ -155,7 +163,15 @@ return $article;
   			
   		})
   	}
+
+
+    $('#Composition').on('click',function() {
+              $(".new-tweet").slideToggle('fast')
+              $('textarea').focus()
+            })
   
+
+
 
 
 })

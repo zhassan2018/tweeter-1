@@ -7,6 +7,7 @@ article.singleTweet{
 	border-radius: 10px;
 	margin:auto;
 	opacity: 0.6;
+	margin-bottom: 20px;
 	
 }
 
@@ -33,7 +34,7 @@ article.singleTweet footer{
 
 
 article.singleTweet .tweetText{
-	color: red;
+	color: black;
 	font-size: 20px;
 	padding: 10px;
 	}
@@ -55,6 +56,8 @@ article.singleTweet h4{
 article.singleTweet i{
 	opacity: 0;
 }
+
+
 
 
 
