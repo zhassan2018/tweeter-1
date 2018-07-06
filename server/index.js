@@ -7,9 +7,8 @@ const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use(bodyParser.json());
 
 // The in-memory database of tweets. It's a basic object with an array in it.
 const MongoClient = require('mongodb').MongoClient;
