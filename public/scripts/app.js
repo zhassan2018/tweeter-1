@@ -62,11 +62,7 @@ $(document).ready(function(){
 
 
 
- 	 /*var $article = $("<article>").addClass("article");
- 	 var $header = $('<p>did it work</p>');
- 	 $($tweet).append($header)
- 	 console.log($tweet) */
-
+ 	
 return $article;
 
  }
@@ -129,10 +125,7 @@ return $article;
 
 
 
-  		
-  		
 
-  	
   	function loadTweets(){
   		$.ajax({
   			url: '/tweets',
