@@ -2,11 +2,26 @@
 	margin-top: 20px
 }
 
+article.singleTweet i{
+	opacity: 0;
+}
+
+
 article.singleTweet{
 	border: 1px solid grey;
 	border-radius: 10px;
 	margin:auto;
 	opacity: 0.6;
+	margin-bottom: 20px;
+	
+}
+
+
+article.singleTweet:hover{
+	border: 1px solid grey;
+	border-radius: 10px;
+	margin:auto;
+	opacity: 1.0;
 	margin-bottom: 20px;
 	
 }
@@ -53,9 +68,7 @@ article.singleTweet h4{
 
 }
 
-article.singleTweet i{
-	opacity: 0;
-}
+
 
 
 

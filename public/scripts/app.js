@@ -143,18 +143,7 @@ return $article;
   			$('#tweet-container').prepend($tweet_ToAdd);
 
   		}
-  		$('.singleTweet').on('mouseenter',function(){
-
-  			$(this).find('i').css('opacity',1.0);
-  			$(this).css('opacity', 1.0);
-  		
-  		})
-
-  		$('.singleTweet').on('mouseleave',function(){
-  			$(this).find('i').css('opacity',0.0);
-  			$(this).css('opacity', 0.6);
-  			
-  		})
+ 
   	}
 
 
@@ -163,8 +152,6 @@ return $article;
               $('textarea').focus()
             })
   
-
-
 
 
 })
