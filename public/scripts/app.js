@@ -42,7 +42,8 @@ $(document).ready(function(){
  	var $footer = $('<footer>');
 
  	var date = tweetObj.created_at;
- 	var $date = $(`<time> ${date}</time>`)
+  var time = Math.round(((((Date.now() - date) / 1000) / 60) / 60) /24);
+ 	var $date = $(`<time> Created: ${time} days ago</time>`)
 
 
 
@@ -122,7 +123,6 @@ return $article;
 
 
   	})
-
 
 
 
